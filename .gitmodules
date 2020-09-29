@@ -1,0 +1,6 @@
+[submodule "support/tutorial_tools"]
+	path = support/tutorial_tools
+	url = https://github.com/salilab/tutorial_tools
+[submodule "lib/PMI_analysis"]
+	path = lib/PMI_analysis
+	url = https://github.com/salilab/PMI_analysis

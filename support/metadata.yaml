@@ -1,0 +1,5 @@
+title: IMP Sampling Tutorial (RNA Polymerase II Stalk)
+description: >
+  In this tutorial, we build, sample and compute the sampling and model
+  precision of the RNA Polymerase II stalk.
+show_in_index: false

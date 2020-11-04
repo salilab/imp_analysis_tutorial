@@ -16,6 +16,7 @@ This tutorial can be downloaded from this page or the command line using `git cl
 The tutorial requires IMP v2.13 (April 2020) or later to run correctly.  
 
 ---Using anaconda---
+
 The simplest way to install and run IMP and this tutorial is using [anaconda](https://www.anaconda.com/products/individual). 
 
 Once installed, IMP and required dependencies can be installed using the following commands
@@ -26,6 +27,7 @@ conda install -c conda-forge hdbscan
 ```
 
 ---Using stand-alone IMP---
+
 IMP [binaries or source code](https://integrativemodeling.org/download.html) are available for download. 
 
 Python 3.X is recommended to run IMP.  Dependencies can be installed via `pip`:

@@ -9,7 +9,14 @@ Citations: In review
 ## Installation and Dependencies
 
 ### Getting the tutorial code and data
-This tutorial can be downloaded from this page or the command line using `git clone github.com/salilab/imp_analysis_tutorial`
+This tutorial can be downloaded from this page or the command line using 
+`git clone github.com/salilab/imp_analysis_tutorial`
+
+Submodules must be downloaded by navigating to the tutorial main directory and running
+```
+git submodule init
+git submodule update
+```
 
 ### Installing IMP and dependencies
 

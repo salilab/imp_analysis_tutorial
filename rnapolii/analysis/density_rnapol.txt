@@ -1,1 +1,1 @@
-density_custom_ranges={"Rbp4":["Rbp4"],"Rbp7":["Rbp7"], "Rigid_Body":["Rbp1", "Rbp2", "Rbp3", "Rbp5", "Rbp6", "Rbp8", "Rbp9","Rbp10","Rbp11","Rbp12"]}
+density_custom_ranges={"Rpb4":["Rpb4"],"Rpb7":["Rpb7"], "Rigid_Body":["Rpb1", "Rpb2", "Rpb3", "Rpb5", "Rpb6", "Rpb8", "Rpb9","Rpb10","Rpb11","Rpb12"]}

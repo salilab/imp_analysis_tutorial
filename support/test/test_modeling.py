@@ -1,7 +1,6 @@
 import IMP
 import unittest
 import os
-import pathlib
 import shutil
 import sys
 import subprocess

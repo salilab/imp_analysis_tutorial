@@ -11,7 +11,7 @@ test_dir = os.path.dirname(os.path.abspath(__file__))
 class Tests(unittest.TestCase):
     
     def test_python_modeling_script_serial(self):
-        os.chdir("../../rnapolii/modeling/")
+        os.chdir(os.path.join(test_dir, "..", "..", "rnapolii", "modeling/"))
         p = subprocess.check_call([sys.executable, "modeling.py", "test", "1", "10"])
         
         # Ensure that a stat file was created in the correct directory

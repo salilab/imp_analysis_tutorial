@@ -1,0 +1,31 @@
+name: build
+
+on:
+  push:
+  pull_request:
+  schedule:
+  - cron: "46 13 * * 0"  # Run at a random time weekly
+
+jobs:
+  build:
+
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest]
+        python-version: [2.7, 3.9]
+        imp-branch: [main, develop]
+    runs-on: ${{ matrix.os }}
+
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        submodules: true
+    - name: Setup conda
+      run: |
+        support/tutorial_tools/setup_travis.sh ${{ matrix.imp-branch }} ${{ matrix.python-version }}
+    - name: Test
+      run: |
+        eval "$(conda shell.bash hook)"
+        conda activate python${{ matrix.python-version }}
+        nosetests --exe support/test

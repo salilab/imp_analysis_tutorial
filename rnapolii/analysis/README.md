@@ -4,7 +4,7 @@ Computation of the sampling precision proceeds through the following three comma
 
 `python ./run_analysis_trajectories.py ../modeling/ example`
 
-`python ./run_extract_models.py 0`
+`python ./run_extract_models.py ../modeling/ example 0`
 
 ```
 python -m IMP.sampcon.exhaust -n rnapol \

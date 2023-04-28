@@ -278,23 +278,23 @@ outputobjects.append(gemt)
 if '--test' in sys.argv: num_frames=100
 
 # This object defines all components to be sampled as well as the sampling protocol
-mc1=IMP.pmi.macros.ReplicaExchange0(m,
-                                    root_hier=root_hier,
-                                    monte_carlo_sample_objects=dof.get_movers(),
-                                    output_objects=outputobjects,
-                                    monte_carlo_temperature=1.0,
-                                    simulated_annealing=True,
-                                    simulated_annealing_minimum_temperature=min(sa_temps),
-                                    simulated_annealing_maximum_temperature=max(sa_temps),
-                                    simulated_annealing_minimum_temperature_nframes=sa_min_temp_steps,
-                                    simulated_annealing_maximum_temperature_nframes=sa_max_temp_steps,
-                                    replica_exchange_minimum_temperature=min(rex_temps),
-                                    replica_exchange_maximum_temperature=max(rex_temps),
-                                    number_of_best_scoring_models=0,
-                                    monte_carlo_steps=num_mc_steps,
-                                    number_of_frames=num_frames,
-                                    global_output_directory=output_directory+str(output_index),
-                                    test_mode=True)
+mc1=IMP.pmi.macros.ReplicaExchange(m,
+                                   root_hier=root_hier,
+                                   monte_carlo_sample_objects=dof.get_movers(),
+                                   output_objects=outputobjects,
+                                   monte_carlo_temperature=1.0,
+                                   simulated_annealing=True,
+                                   simulated_annealing_minimum_temperature=min(sa_temps),
+                                   simulated_annealing_maximum_temperature=max(sa_temps),
+                                   simulated_annealing_minimum_temperature_nframes=sa_min_temp_steps,
+                                   simulated_annealing_maximum_temperature_nframes=sa_max_temp_steps,
+                                   replica_exchange_minimum_temperature=min(rex_temps),
+                                   replica_exchange_maximum_temperature=max(rex_temps),
+                                   number_of_best_scoring_models=0,
+                                   monte_carlo_steps=num_mc_steps,
+                                   number_of_frames=num_frames,
+                                   global_output_directory=output_directory+str(output_index),
+                                   test_mode=True)
 # Start Sampling
 mc1.execute_macro()
 

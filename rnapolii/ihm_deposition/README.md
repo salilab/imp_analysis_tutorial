@@ -10,7 +10,7 @@ Folder containing ihm deposition script and output mmcif file for IMP analysis t
 
 This will output the mmcif file `tutorial_output.cif`, along with `xl.db` files, which can be ignored. 
 
-This .cif file is appropriate for deposition in the [PDB-Dev repository](https://pdb-dev.wwpdb.org/) for integrative models.
+This .cif file is appropriate for deposition in the [PDB-IHM repository](https://pdb-ihm.org/) for integrative models.
 
 ### Further info
 
